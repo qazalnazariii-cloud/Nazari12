@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>بازی حدس عدد شیطانی</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>حدس عدد شیطانی 😈</h1>
+    <p>من یه عدد بین ۱ تا ۱۰۰ فکر کردم... یا شایدم نکردم!</p>
+    <p>تو حدس بزن، من فقط می‌گم درست یا غلط. هیچ راهنمایی نمی‌دم!</p>
+    
+    <div class="game">
+      <input type="number" id="guessInput" min="1" max="100" placeholder="حدست چیه؟"/>
+      <button id="guessBtn">حدس بزن!</button>
+    </div>
+
+    <div id="message"></div>
+    <div id="history"></div>
+    <div id="remaining">اعداد ممکن باقی‌مونده: ۱۰۰</div>
+
+    <button id="newGame" style="display:none; margin-top:20px;">بازی جدید</button>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
